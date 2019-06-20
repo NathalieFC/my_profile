@@ -4,10 +4,12 @@
 <head> 
 	<title>Nathalie's profile</title>
 	<meta name="description" content="Welcome to my profile page">
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -45,6 +47,20 @@
 		</div>
 
 		<div id='map'></div>
+			<script>
+			mapboxgl.accessToken = 'pk.eyJ1IjoibmF0aGFsaWVmYyIsImEiOiJjang0cTN0ZmcwY2F0NGFydWJrc2cwczRwIn0.QUe1YcLV2CoNzi7OllRNkQ';
+			var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v10',
+			center: [2.3372273,48.8724159],
+			zoom:9
+			});
+			var marker = new mapboxgl.Marker()
+			.setLngLat([2.3372273,48.8724159])
+			.addTo(map);
+
+		</script>
+
 		<div id="social-links">
 			<h3>Follow me !</h3>
 			<ul class="list-inline">

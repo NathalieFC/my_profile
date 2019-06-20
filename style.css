@@ -2,18 +2,19 @@ body {
 color: #17223b;
 background-color: #f7f8fb ;
 font-family: 'Dosis', sans-serif;
-text-align: center;
+
 }
 
 .container {
 	width: 600px;
 	margin:0px auto;
 
+
 }
 
 
-
 .card-white {
+		text-align: center;
     background-color: white;
     margin: 40px 0px;
     padding: 30px;
@@ -22,6 +23,7 @@ text-align: center;
 }
 
 #social-links {
+		text-align: center;
     background-color: #f7f8fb;
 }
 
@@ -46,6 +48,12 @@ color: #6b778d;}
 h3{color: #f57b10}
 
 p{margin-bottom: 30px;}
+
+#map {
+	width: 600px;
+	height: 150px;
+	margin: : 0px auto;
+}
 
 
 #img-circle{
@@ -106,6 +114,7 @@ p{margin-bottom: 30px;}
   	padding: 20px 40px;
 
   }
+  #map {width: 100%;}
 }
 @media (max-width: 360px) {
   /* For a screen < 540px, this CSS will be read */
